@@ -244,7 +244,7 @@ def addBookTag(catalog, tag):
     """
     bookid = tag['goodreads_book_id']
     tagid = tag['tag_id']
-    entry = mp.get(catalog['tagIds'], tagid)
+    entry = mp.get(catalog['tagIds'], tagid)    
 
     if entry:
         tagbook = mp.get(catalog['tags'], me.getValue(entry)['name'])
